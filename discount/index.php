@@ -8,24 +8,21 @@
         $price = $_GET['price'];
         $dis = $_GET['discount'];
         $sum = $qua * $price;
-
-        if ($dis !='') {
+      if (!is_numeric ($qua) || !is_numeric ($price))
+       {
+       echo 'Oops..Something went wrong';
+       exit;
+       }
+      if (($qua <= '0') || ($price <= '0'))
+       {
+       echo 'Oops..Something went wrong';
+       exit;
+       }
+      if ($dis !='') {
            $sum = $sum - $sum * ($dis/100);
        }
-    //    if (!is_numeric ($qua) || !is_numeric ($price));
-    //   {
-    //   echo 'Oops..Something went wrong';
-    //   exit;
-    //   }
-    //   if (($qua <= '0') || ($price <= '0'));
-    //   {
-    //   echo 'Oops..Something went wrong';
-    //   exit;
-    //   }
-  
    ?>
-    
-  <table border="1">
+   <table border="1">
    <caption>Order information</caption>
    <tr>
        <th>Product name</th>
@@ -51,5 +48,6 @@
        echo $sum;
         } ?></td>   
    </tr>
+  </table>
  </body>
 </html>
