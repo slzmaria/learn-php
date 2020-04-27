@@ -3,7 +3,7 @@
  </head>
  <body>
    <?php
-      $year = (int)$_GET['year'];  
+      $year = (int) $_GET['year'];  
       $lev = $year . ' is not a leap year';
       
         if ($year % 4 == 0 && $year % 100 != 0 || $year % 400 == 0) {
