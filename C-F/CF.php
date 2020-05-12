@@ -11,7 +11,10 @@
     if ($converte === 'F') {
         $result = ($val * 9/5) + 32;
     }
-   
+    if ($converte === 'undefined') {
+      echo 'Unexpected direction to convertion';
+      exit;
+    }
 
-    echo $result,' Degrees ', $converte;
+      echo $result,' Degrees ', $converte;
 
