@@ -1,13 +1,13 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {    
-    echo file_get_contents(__DIR__ . '/form.html');
+    include __DIR__ . '/form.php';
     exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-   echo file_get_contents(__DIR__ . '/form.html');
    include __DIR__ . '/CF.php';
+   include __DIR__ . '/form.php';
    exit;
 }
 

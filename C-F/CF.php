@@ -16,5 +16,3 @@
       exit;
     }
 
-      echo $result,' Degrees ', $converte;
-
