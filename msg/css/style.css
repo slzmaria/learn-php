@@ -1,0 +1,51 @@
+h1.greet {
+  font-family: bookman old style;
+  font-size: 35px;
+  color: #9370DB;
+}
+h2.description {
+  font-family: Lucida Console;
+  font-size: 20px;
+  color: #DB7093;
+}
+form.send {
+  font-family: Lucida Console;
+  font-bold: bold;
+  font-size: 30px;
+  color: #9370DB;
+}
+
+form.send input {
+  width: 200px;
+  height: 25px;
+  display: line;
+  font-size: 18px;
+  font-family: bookman old style;
+  margin-bottom: 5px;
+  border-radius: 6px;
+
+}
+
+form.send textarea {
+  font-bold: bold;
+  font-size: 14px;
+  font-family: Lucida Console;
+  color: #DB7093;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+form.send button {
+  width: 200px;
+  height: 45px;
+  background-color: #9370DB;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Lucida Console;
+  border-style: outset;
+  border-radius: 10px;
+}
+p.link {
+  font-family: bookman old style;
+  font-size: 25px;
+}
